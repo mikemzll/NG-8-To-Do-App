@@ -1,0 +1,12 @@
+<div class="w-400 mxw-100 text-center">
+	<mat-form-field class="full-width">
+		<input matInput placeholder="Enter your username">
+	</mat-form-field>
+	<mat-form-field class="full-width">
+		<input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+		<button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+		<mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+		</button>
+	</mat-form-field>
+	<a mat-flat-button color="accent" routerLink="/admin"><mat-icon>person_outline</mat-icon> Login</a>
+</div>

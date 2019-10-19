@@ -1,1 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+ul {
+	padding: 0;
+	list-style: none;
+}
+a.active {
+	color: #fff;
+	background-color: #3f51b5;
+
+	span {
+		color: #fff;
+	}
+}
+.flex {
+	display: flex;
+	justify-content: space-between;
+
+	&-center {
+		display: flex;
+		align-items: center;
+
+		&-between {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&-center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	&-row-reverse {
+		flex-direction: row-reverse;
+	}
+	&-col {
+		flex-direction: column;
+		&-reverse {
+			flex-direction: column-reverse;
+		}
+	}
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+.mg- {
+	&20 {
+		margin: 20px;
+
+		&-0 {
+			margin: 20px 0;
+		}
+	}
+	&10 {
+		margin: 10px;
+
+		&-0 {
+			margin: 10 0px;
+		}
+	}
+}
+.w- {
+	&600 {
+		width: 600px;
+	}
+	&500 {
+		width: 500px;
+	}
+	&400 {
+		width: 400px;
+	}
+}
+.mxw- {
+	&100 {
+		max-width: 100%;
+	}
+	&90 {
+		max-width: 90%;
+	}
+}
+.checkbox-wrapper {
+	width: 40px;
+	height: 40px;
+}
+.full-width {
+  width: 100%;
+}
+.text-center {
+	text-align: center;
+}
+.completed {
+	text-decoration: line-through; 
+}
+.div-stack {
+	margin: 50px 0 20px;
+}
+.img-stack {
+	width: 60px;
+}
+.todo {
+	margin: 10px 0;
+
+	&:hover .todo-remove {
+		display: block;
+	}
+}
+.todo-remove {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
